@@ -1,4 +1,4 @@
 # Ig-Profile_Analyzer
-This is an Simple GUI made with python tkinter that can web scrape Ig-Profiles.
--------------------------------------------------------------------------------
+-------------------------------------
+This is an Ig-profile Scrapper Gui made with python.
 @scarlettbee🎑 
