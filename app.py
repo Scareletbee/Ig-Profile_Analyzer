@@ -6,13 +6,13 @@ win = Tk()
 win.config(bg="#FDEDEC")
 win.iconbitmap('pink.ico')
 win.geometry('520x240')
-win.title('Ig-Info')
+win.title('Ig-Info') 
 
 
           
 def followers():
     bot = instaloader.Instaloader()
-    profile = instaloader.Profile.from_username(bot.context, 'learnnihongo123')
+    profile = instaloader.Profile.from_username(bot.context, 'Put your Ig-Username here!') #Put your ig-username here!
     Lbl0= Label(win, text=type(profile),bg="black",fg="white")
     Lbl0.place(x=220,y=40)
 
@@ -33,8 +33,8 @@ def posts():
     L = instaloader.Instaloader()
 
 
-    for post in instaloader.Hashtag.from_name(L.context, 'learnnihongo123').get_posts():
-        show = Label(win,text=L.download_post(post, target='#learnnihongo123'))
+    for post in instaloader.Hashtag.from_name(L.context, 'Put your Ig-Username here!').get_posts(): #put your ig-username here
+        show = Label(win,text=L.download_post(post, target='Put your Ig-Username here!')) #add hastag to create a folder of your ig-username
         show.pack()
 
         showinfo("Done!!")
